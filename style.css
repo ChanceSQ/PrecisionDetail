@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+/* Colors */
+:root {
+  --dark: #191919;
+  --medium: #787878;
+  --light: #f3f3f3;
+  --accent: #45a5ff;
+  --transp-white: rgba(255, 255, 255, 0.9);
+  --transp-light: rgba(243, 243, 243, 0.5);
+}
+
+/* Text */
 h1,
 h2,
 h3,
@@ -12,17 +23,54 @@ h5,
 h6 {
   font-weight: 400;
   font-family: "Play", sans-serif;
-  color: #eee;
+  color: var(--light);
+}
+
+h1 {
+  font-size: 55px;
+}
+
+h2 {
+  font-size: 45px;
+  color: var(--dark);
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 14px;
 }
 
 p,
 li {
   font-family: "Montserrat", sans-serif;
-  color: #eee;
+}
+
+p {
+  color: var(--medium);
+}
+
+li {
+  color: var(--dark);
+}
+
+nav li {
+  color: var(--medium);
+  font-size: 20px;
 }
 
 a {
   text-decoration: none;
+}
+
+.icon-md {
+  width: 20px;
 }
 
 .icon-lg {
@@ -36,55 +84,53 @@ a {
 }
 
 .icon-light {
-  fill: #eee;
+  fill: var(--light);
 }
 
-.container {
-  width: 100vw;
-  min-height: 100vh;
-  min-height: calc(var(--vh, 1vh) * 100);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #2d3436;
-  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
-}
-
-.container-content {
-  width: 90vw;
-  min-height: 100vh;
-  min-height: calc(var(--vh, 1vh) * 100);
-}
-
-#landing-page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-}
-
-.social {
-  position: absolute;
-  width: 300px;
-  height: 40px;
-  bottom: 1%;
-  left: calc(50% - 150px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.icon-light:hover {
   cursor: pointer;
+  fill: var(--accent);
 }
 
-.social p {
-  margin-left: 10px;
-  transition: 500ms;
+.content-bounds {
+  width: 80vw;
+  justify-content: space-between;
 }
 
-.social:hover .icon-lg {
-  fill: #888;
+/* Top Bar */
+.top-bar {
+  width: 100vw;
+  height: 40px;
+  background: var(--dark);
+  justify-content: center;
+  position: fixed;
 }
 
-.social:hover p {
-  color: #888;
+.contact-bar,
+.contact-item,
+.top-bar,
+.social-bar,
+.content-bounds {
+  display: flex;
+  align-items: center;
+}
+
+.contact-item {
+  margin-right: 20px;
+}
+
+.contact-bar svg {
+  margin-right: 5px;
+}
+
+.social-bar svg {
+  margin-left: 20px;
+}
+
+.test {
+  width: 100vw;
+  height: 100px;
+  background: red;
+  position: sticky;
+  top: 40px;
 }
