@@ -150,12 +150,25 @@ a {
   margin-right: 20px;
 }
 
+.contact-item:hover svg,
+.contact-item:hover h5,
+.contact-item:hover #Path_3 {
+  fill: var(--medium);
+  color: var(--medium);
+  cursor: pointer;
+}
+
 .contact-bar svg {
   margin-right: 5px;
 }
 
 .social-bar svg {
   margin-left: 20px;
+  transition: 500ms;
+}
+
+.social-bar svg:hover {
+  transform: scale(1.1);
 }
 
 #navbar {
