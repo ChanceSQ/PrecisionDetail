@@ -109,7 +109,7 @@ a {
   height: 40px;
   background: var(--dark);
   justify-content: center;
-  position: fixed;
+  /* position: fixed; */
   z-index: 1;
 }
 
@@ -144,6 +144,7 @@ a {
   justify-content: center;
   background: var(--transp-white);
   transition: top 0.5s;
+  z-index: 2;
 }
 
 #navbar ul {
@@ -157,4 +158,14 @@ a {
 
 #navbar ul li:hover {
   font-weight: 700;
+}
+
+/* Showcase */
+.showcase {
+  height: calc(100vh - 40px);
+  background-image: url(./img/jonathan-gallegos-5FGqfV6UjzI-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: contrast(70%) brightness(30%);
 }
