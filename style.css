@@ -12,6 +12,22 @@
   --accent: #45a5ff;
   --transp-white: rgba(255, 255, 255, 0.9);
   --transp-light: rgba(243, 243, 243, 0.5);
+  --transp-black: rgba(0, 0, 0, 0.8);
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Noselect (prevents blue box over text on buttons) */
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* Text */
@@ -103,21 +119,28 @@ a {
   justify-content: space-between;
 }
 
+.middle-bounds {
+  width: 80vw;
+  justify-content: center;
+  flex-direction: column;
+}
+
 /* Top Bar */
 .top-bar {
   width: 100%;
   height: 40px;
-  background: var(--dark);
+  background: var(--transp-black);
   justify-content: center;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
 }
 
 .contact-bar,
 .contact-item,
 .top-bar,
 .social-bar,
-.content-bounds {
+.content-bounds,
+.middle-bounds {
   display: flex;
   align-items: center;
 }
@@ -138,7 +161,7 @@ a {
   height: 100px;
   width: 100%;
   position: fixed;
-  top: 40px;
+  top: -140px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,5 +190,68 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: contrast(70%) brightness(30%);
+}
+
+.showcase-overlay {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background: var(--transp-black);
+}
+
+#showcase-content {
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+}
+
+#showcase-line {
+  width: 310px;
+  height: 1px;
+  background: var(--light);
+  margin-bottom: 2px;
+}
+
+#showcase-content h4 {
+  margin-bottom: 20px;
+}
+
+.showcase-btn {
+  font-family: "Play", sans-serif;
+  font-size: 16px;
+  background: transparent;
+  border: 2px solid var(--light);
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  color: var(--light);
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  transition: 400ms ease-in-out;
+  margin: 0 10px 0 10px;
+}
+
+.showcase-btn:hover {
+  width: 170px;
+  background: var(--medium);
+  border: 2px solid var(--medium);
+  margin: 0;
+}
+
+.showcase-btn:focus {
+  border: 2px solid var(--accent);
+  outline: none;
+}
+
+.showcase-btn span {
+  color: transparent;
+  transition: 500ms;
+  margin-left: -20px;
+}
+
+.showcase-btn:hover span {
+  color: var(--light);
+  margin-left: 0;
 }
