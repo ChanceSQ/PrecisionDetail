@@ -91,6 +91,11 @@ a {
   color: inherit;
 }
 
+.text-accent-strong {
+  color: var(--accent);
+  font-weight: bold;
+}
+
 .icon-md {
   width: 20px;
 }
