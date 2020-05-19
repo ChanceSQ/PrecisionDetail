@@ -33,6 +33,18 @@
     <title>Precision Detail | Auto Spa</title>
   </head>
   <body>
+    <!-- Promo Bar -->
+    <div id="promobar">
+      <div class="content-bounds">
+        <a href="#">
+          <h5>
+            COVID-19 : Auto Sanitization / Steam Cleaning Packages (Sedan, Small
+            SUV $100 / Large SUV, Minivan, Truck $150)
+          </h5>
+        </a>
+      </div>
+    </div>
+
     <!-- Navigation -->
     <div id="navbar">
       <div class="content-bounds">
@@ -426,8 +438,10 @@ l-228 0 0 480 0 480 90 0 90 0 0 100 0 100 -255 0 -255 0 0 -1070z"
         var currentScrollPos = window.pageYOffset;
         if (prevScrollpos < currentScrollPos) {
           document.getElementById("navbar").style.top = "40px";
+          document.getElementById("promobar").style.top = "140px";
         } else {
-          document.getElementById("navbar").style.top = "-140px";
+          document.getElementById("promobar").style.top = "-40px";
+          // document.getElementById("navbar").style.top = "-140px";
         }
         prevScrollpos = currentScrollPos;
       };
@@ -436,7 +450,7 @@ l-228 0 0 480 0 480 90 0 90 0 0 100 0 100 -255 0 -255 0 0 -1070z"
     <script>
       function showDetails(id) {
         var x = document.getElementById(id);
-        if (x.style.display === "none") {
+        if (x.style.display === "none" || x.style.display === "") {
           x.style.display = "block";
         } else {
           x.style.display = "none";

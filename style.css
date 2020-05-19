@@ -159,7 +159,8 @@ a {
 .top-bar,
 .social-bar,
 .content-bounds,
-.middle-bounds {
+.middle-bounds,
+#promobar {
   display: flex;
   align-items: center;
 }
@@ -189,6 +190,8 @@ a {
   transform: scale(1.1);
 }
 
+/* Navbar */
+
 #navbar {
   height: 100px;
   width: 100%;
@@ -199,7 +202,7 @@ a {
   justify-content: center;
   background: var(--transp-white);
   transition: top 0.5s;
-  z-index: 2;
+  z-index: 5;
 }
 
 #navbar ul {
@@ -213,6 +216,24 @@ a {
 
 #navbar ul li:hover {
   font-weight: 700;
+}
+
+/* Promo Bar */
+
+#promobar {
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  top: -80px;
+  justify-content: center;
+  text-align: center;
+  background: var(--accent);
+  transition: top 0.5s;
+  z-index: 2;
+}
+
+#promobar .content-bounds {
+  justify-content: center;
 }
 
 /* Showcase */
