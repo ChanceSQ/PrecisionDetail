@@ -126,7 +126,7 @@ a {
 
 .expandable-container {
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 140px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -160,7 +160,9 @@ a {
 .social-bar,
 .content-bounds,
 .middle-bounds,
-#promobar {
+#promobar,
+.strip,
+.strip-content {
   display: flex;
   align-items: center;
 }
@@ -312,6 +314,10 @@ a {
 #packages {
   position: absolute;
   bottom: 40px;
+}
+
+#packages-content {
+  margin-top: 40px;
 }
 
 .flex-3col {
@@ -467,4 +473,20 @@ a {
 #platinum-package {
   background-color: #000000;
   background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+}
+
+.strip {
+  width: 100%;
+  min-height: 25vh;
+  background: var(--dark);
+}
+
+.strip-content {
+  width: 60%;
+  text-align: center;
+}
+
+.strip,
+.strip-content {
+  justify-content: center;
 }
