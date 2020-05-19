@@ -229,7 +229,7 @@ a {
   text-align: center;
   background: var(--accent);
   transition: top 0.5s;
-  z-index: 2;
+  z-index: 3;
 }
 
 #promobar .content-bounds {
