@@ -317,6 +317,7 @@ a {
 }
 
 #packages-content {
+  width: 90vw;
   margin-top: 40px;
 }
 
@@ -489,4 +490,77 @@ a {
 .strip,
 .strip-content {
   justify-content: center;
+}
+
+.strip-content h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+#choose-us-strip {
+  flex-direction: column;
+  background: var(--light);
+  margin-top: 5vh;
+}
+
+.choose-us-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.choose-us-item svg {
+  fill: var(--accent);
+  margin-right: 20px;
+}
+
+.choose-us-item h3 {
+  color: var(--dark);
+}
+
+.flex-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  margin: 5vh 0;
+}
+
+#covid-bar {
+  height: 25px;
+  width: 100vw;
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  background: var(--accent);
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#covid-details {
+  position: fixed;
+  bottom: 25px;
+  z-index: 5;
+  display: none;
+}
+
+#covid-strip {
+  width: 100vw;
+  background: var(--transp-white);
+}
+
+.covid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.covid-item svg {
+  fill: var(--accent);
+}
+
+.covid-item h4 {
+  color: var(--dark);
 }
