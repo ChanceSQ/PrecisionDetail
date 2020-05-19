@@ -151,6 +151,7 @@ a {
   background: var(--transp-black);
   justify-content: center;
   position: fixed;
+  top: 0;
   z-index: 3;
 }
 
@@ -524,6 +525,33 @@ a {
   margin: 5vh 0;
 }
 
+/* About Page */
+#about-content {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+#about-strip h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
+#about-details h2 {
+  color: var(--dark);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#about-details h3 {
+  color: var(--accent);
+}
+
+#about-details p {
+  font-size: 20px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+/* COVID PREVENTION BAR */
 #covid-bar {
   height: 25px;
   width: 100vw;
