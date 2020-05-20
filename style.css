@@ -327,10 +327,10 @@ a {
 }
 
 .flex-3col {
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .card {
   margin: 10px;
