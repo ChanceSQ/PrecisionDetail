@@ -70,7 +70,7 @@ h5 {
 
 p,
 li {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 p {
@@ -498,7 +498,7 @@ a {
 }
 
 .strip-content h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #choose-us-strip {
@@ -536,7 +536,7 @@ a {
 }
 
 #about-strip h4 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #about-details h2 {
@@ -562,7 +562,7 @@ a {
 }
 
 table {
-  width: 80%;
+  width: 60%;
 }
 
 table th:nth-child(n + 2) {
@@ -572,7 +572,7 @@ table th:nth-child(n + 2) {
 table th {
   background: var(--accent);
   color: var(--light);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   height: 50px;
 }
@@ -589,8 +589,8 @@ table tr td:nth-child(1) {
 table tr td {
   color: var(--dark);
   text-align: center;
-  font-family: "Montserrat", sans-serif;
-  height: 50px;
+  font-family: "Roboto", sans-serif;
+  height: 30px;
 }
 
 table tr:nth-child(2) td {
