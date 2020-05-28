@@ -497,7 +497,9 @@ a {
   justify-content: center;
 }
 
-.strip-content h3 {
+.strip-content h4 {
+  font-weight: 200;
+  font-size: 16px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -563,6 +565,7 @@ a {
 
 table {
   width: 60%;
+  font-size: 16px;
 }
 
 table th:nth-child(n + 2) {
@@ -595,6 +598,37 @@ table tr td {
 
 table tr:nth-child(2) td {
   font-weight: 700;
+}
+
+/* PD LOGO KEYFRAMES */
+#Path_D,
+#Path_P {
+  fill: rgba(243, 243, 243, 0);
+  stroke: #f3f3f3;
+  animation: line-animation 5s ease-in-out forwards,
+    fill 2s ease-in-out 5s forwards;
+}
+
+#Path_D {
+  stroke-dasharray: 787px;
+  stroke-dashoffset: 787px;
+}
+
+#Path_P {
+  stroke-dasharray: 573px;
+  stroke-dashoffset: 573px;
+}
+
+@keyframes line-animation {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  to {
+    fill: rgba(243, 243, 243, 1);
+  }
 }
 
 /* COVID PREVENTION BAR */

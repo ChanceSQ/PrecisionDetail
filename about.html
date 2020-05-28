@@ -370,12 +370,12 @@
       var prevScrollpos = window.pageYOffset;
       window.onscroll = function () {
         var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos < currentScrollPos) {
+        if (prevScrollpos > currentScrollPos) {
           document.getElementById("navbar").style.top = "40px";
           document.getElementById("promobar").style.top = "140px";
         } else {
           document.getElementById("promobar").style.top = "-40px";
-          // document.getElementById("navbar").style.top = "-140px";
+          document.getElementById("navbar").style.top = "-140px";
         }
         prevScrollpos = currentScrollPos;
       };

@@ -135,35 +135,30 @@
       <div class="showcase-overlay"></div>
       <div class="middle-bounds" id="showcase-content">
         <svg
-          version="1.0"
+          class="PD-logo"
           xmlns="http://www.w3.org/2000/svg"
-          width="100.000000pt"
-          height="100.000000pt"
-          viewBox="0 0 300.000000 300.000000"
-          preserveAspectRatio="xMidYMid meet"
+          width="144.388"
+          height="135.706"
+          viewBox="0 0 144.388 135.706"
         >
-          <g
-            transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)"
-            fill="#ffffff"
-            stroke="none"
-          >
+          <g id="precision-detail" transform="translate(-39 256.372)">
             <path
-              d="M1193 2562 l-243 -2 0 -561 0 -560 118 7 c64 3 135 9 157 13 l40 7 5
-434 5 435 355 -3 c371 -3 429 -9 542 -51 88 -34 142 -81 180 -158 l33 -68 0
--570 0 -570 -27 -51 c-47 -89 -120 -142 -253 -184 -89 -27 -325 -42 -620 -38
-l-210 3 -3 254 -2 254 -107 -6 c-58 -4 -130 -7 -160 -7 l-53 0 0 -361 0 -360
-573 4 c589 4 603 5 752 49 166 48 309 148 368 256 61 113 62 121 62 752 0 629
--1 633 -61 752 -80 158 -277 273 -540 313 -104 16 -451 22 -911 17z"
+              id="Path_D"
+              data-name="Path 1"
+              d="M110.086-256.263,95-256.137v70.931l7.326-.443c3.973-.19,8.381-.569,9.747-.823l2.483-.443.31-27.461.31-27.524,22.039.19c23.033.19,26.633.569,33.649,3.227,5.463,2.151,8.816,5.125,11.175,10l2.049,4.3v72.133l-1.676,3.227c-2.918,5.631-7.45,8.985-15.707,11.642-5.525,1.708-20.177,2.658-38.491,2.4l-13.037-.19-.186-16.072-.124-16.072-6.643.38c-3.6.253-8.071.443-9.933.443H95v45.621l35.573-.253c36.567-.253,37.436-.316,46.686-3.1,10.306-3.037,19.183-9.365,22.846-16.2,3.787-7.15,3.849-7.656,3.849-47.582,0-39.8-.062-40.053-3.787-47.582-4.967-10-17.2-17.274-33.525-19.8C160.187-256.2,138.644-256.579,110.086-256.263Z"
+              transform="translate(-20.566)"
+              fill="#191919"
             />
             <path
-              d="M390 1490 l0 -1070 165 0 165 0 0 385 0 385 233 0 c127 0 273 5 322
-10 266 30 447 117 519 250 52 95 56 129 55 455 0 165 -3 318 -7 340 l-7 40
--193 3 c-105 1 -192 0 -192 -4 0 -3 13 -21 29 -40 17 -18 35 -50 40 -71 17
--61 14 -499 -4 -559 -20 -68 -65 -118 -138 -154 -101 -49 -174 -60 -429 -60
-l-228 0 0 480 0 480 90 0 90 0 0 100 0 100 -255 0 -255 0 0 -1070z"
+              id="Path_P"
+              data-name="Path 2"
+              d="M39-188.3v67.7H59.881v-48.721H74.624c8.036,0,17.274-.316,20.374-.633,16.831-1.9,28.284-7.4,32.839-15.819,3.29-6.011,3.543-8.162,3.48-28.79,0-10.44-.19-20.121-.443-21.513l-.443-2.531-12.212-.19c-6.644-.063-12.149,0-12.149.253a12.844,12.844,0,0,0,1.835,2.531,11.874,11.874,0,0,1,2.531,4.492c1.076,3.86.886,31.574-.253,35.37-1.265,4.3-4.113,7.466-8.732,9.744-6.391,3.1-11.01,3.8-27.145,3.8H59.881v-60.743H71.27V-256H39Z"
+              transform="translate(0 -0.136)"
+              fill="#191919"
             />
           </g>
         </svg>
+
         <h1>PRECISION DETAIL</h1>
         <div id="showcase-line"></div>
         <h4>Mobile automotive detailing</h4>
@@ -317,13 +312,13 @@ l-228 0 0 480 0 480 90 0 90 0 0 100 0 100 -255 0 -255 0 0 -1070z"
     <!-- Values strip -->
     <div class="strip">
       <div class="strip-content">
-        <h3>
+        <h4>
           At Precision Detail we pride ourselves in providing a premium service
           to clients through excellent customer service and a true passion for
           auto care. We understand the need for ensuring a service is completed
           thoroughly, that’s why Precisions’ operates on a “no-shortcuts” taken
           approach – emphasizing the detail in auto detailing.
-        </h3>
+        </h4>
       </div>
     </div>
 
@@ -503,12 +498,12 @@ l-228 0 0 480 0 480 90 0 90 0 0 100 0 100 -255 0 -255 0 0 -1070z"
       var prevScrollpos = window.pageYOffset;
       window.onscroll = function () {
         var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos < currentScrollPos) {
+        if (prevScrollpos > currentScrollPos) {
           document.getElementById("navbar").style.top = "40px";
           document.getElementById("promobar").style.top = "140px";
         } else {
           document.getElementById("promobar").style.top = "-40px";
-          // document.getElementById("navbar").style.top = "-140px";
+          document.getElementById("navbar").style.top = "-140px";
         }
         prevScrollpos = currentScrollPos;
       };
